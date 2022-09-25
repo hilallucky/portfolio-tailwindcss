@@ -1,5 +1,8 @@
 {
   "devDependencies": {
+    "postcss": "^8.4.16",
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.13",
     "tailwindcss": "^3.1.8"
   },
   "name": "tailwin-css-portfolio",
@@ -43,7 +46,6 @@
     "picocolors": "^1.0.0",
     "picomatch": "^2.3.1",
     "pify": "^2.3.0",
-    "postcss": "^8.4.16",
     "postcss-import": "^14.1.0",
     "postcss-js": "^4.0.0",
     "postcss-load-config": "^3.1.4",
@@ -67,7 +69,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "npx tailwindcss -i ./src/style.css -o ./public/css/style.css --watch",
-    "minify": "npx -o ./public/css/style.css --minify"
+    "minify": "npx tailwindcss -o ./public/css/style.css --minify"
   },
   "keywords": [],
   "author": "",
